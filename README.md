@@ -1,5 +1,4 @@
 # Tomato [Backend] 🍅
-
 Welcome boys and girls
 
 ## To-Do
@@ -10,3 +9,4 @@ Welcome boys and girls
 - host BE with Deta https://fastapi.tiangolo.com/deployment/deta/
 
 ## Notes & Thoughts
+i don't have homebrew. i don't have anything. what a time to format my computer

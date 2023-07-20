@@ -2,7 +2,6 @@ from typing import Union
 
 from fastapi import FastAPI
 from pydantic import BaseModel
-import csv
 
 app = FastAPI()
 
@@ -15,11 +14,19 @@ class Item(BaseModel):
 data = []
 
 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+from csv import DictReader
+
+data = []
+
 with open('fixtures/data.csv', newline='') as csvfile:
-    file = csv.reader(csvfile, delimiter=',', quotechar='"')
-    for row in file:
-        print(row)
-        data.append(', '.join(row))
+    dict_reader = DictReader(csvfile)   
+    data = list(dict_reader)
 
 @app.get("/")
 def read_root():

@@ -1,6 +1,6 @@
 # Tomato [Backend] 🍅
 
-Welcome boys and girls
+Link to frontend repo: https://github.com/flyoungiv/tomato
 
 ## To-Do
 

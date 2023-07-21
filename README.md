@@ -21,7 +21,18 @@ Link to frontend repo: https://github.com/flyoungiv/tomato
 - ~~create google cloud db~~
 - normalize db table so each contestant has its own uuid
 - introduce an ORM (sqlAlchemy?)
+- set up auth FE
+- set up auth token validation BE
+- choose conclusion for data
+- link graph to data in table
+- add links/metadata section
+- set up CI/CD
+
+## Data Sources
+https://data.worldbank.org/indicator/SP.POP.TOTL
 
 ## Notes & Thoughts
 =======
 i don't have homebrew. i don't have anything. what a time to format my computer
+redis?
+redshift?

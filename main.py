@@ -23,22 +23,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-#!/usr/bin/python
+# import psycopg2
 
-import psycopg2
+# conn = psycopg2.connect(database = "postgres", user = "postgres", password = ";u/)Ahzy)\"ZE8Vc&", host = "34.121.201.240", port = "5432")
 
-conn = psycopg2.connect(database = "postgres", user = "postgres", password = ";u/)Ahzy)\"ZE8Vc&", host = "34.121.201.240", port = "5432")
+# cur = conn.cursor()
 
-cur = conn.cursor()
-
-cur.execute("SELECT id, name, age, medal  from contestants where id = '1'")
-rows = cur.fetchall()
-for row in rows:
-   print("ID = ", row[0])
-   print("NAME = ", row[1])
-   print("age = ", row[2])
-   print("medal = ", row[3], "\n")
-conn.close()
+# cur.execute("SELECT id, name, age, medal  from contestants where id = '1'")
+# rows = cur.fetchall()
+# for row in rows:
+#    print("ID = ", row[0])
+#    print("NAME = ", row[1])
+#    print("age = ", row[2])
+#    print("medal = ", row[3], "\n")
+# conn.close()
 
 
 class Item(BaseModel):

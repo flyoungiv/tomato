@@ -1,5 +1,4 @@
 from typing import Union
-from csv import DictReader
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -44,16 +43,9 @@ class Item(BaseModel):
     price: float
     is_offer: Union[bool, None] = None
 
-data = []
-
-with open('fixtures/data.csv', newline='') as csvfile:
-    dict_reader = DictReader(csvfile)   
-    data = list(dict_reader)
-
 @app.get("/")
 def read_root():
-    # return {"Hello": "World"}
-    return data
+    return {"Hello": "World"}
 
 
 @app.get("/items/{item_id}")

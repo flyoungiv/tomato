@@ -34,6 +34,9 @@ from
 where
   p.country_code is null;
 
+--remove blank country code records
+delete from country_codes where noc = '';
+
 --miscellaneous
 select
   count(1)

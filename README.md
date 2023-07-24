@@ -38,5 +38,4 @@ https://www.worlddata.info/countrycodes.php
 i could have saved time by only taking matches on ISO and NOC country codes but i wanted to find a solution because real life data is messy
 i don't have homebrew. i don't have anything. what a time to format my computer
 had to find a lookup table for country codes to convert from olympics to iso
-redis?
-redshift?
+would be better to have done data transformation within endpoint instead of in a separate script

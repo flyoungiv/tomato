@@ -39,3 +39,4 @@ i could have saved time by only taking matches on ISO and NOC country codes but 
 i don't have homebrew. i don't have anything. what a time to format my computer
 had to find a lookup table for country codes to convert from olympics to iso
 would be better to have done data transformation within endpoint instead of in a separate script
+update google cloud yml

@@ -1,15 +1,21 @@
 --total medals per country/year
 select
-  noc as country,
-  year,
-  count(1) as medals
+  p.country,
+  cc.iso3 as country_code,
+  count(1)
 from
-  contestants
+  contestants c
+  join country_codes cc on c.noc = cc.noc
+  join populations p on cc.iso3 = p.country_code
 where
-  medal is not null
+  c.year >= 1960
+  and c.year <= 2016
+  and c.medal is not null
 group by
-  noc,
-  year;
+  p.country,
+  cc.iso3
+order by
+  country asc;
 
 --all contestants with medal
 select

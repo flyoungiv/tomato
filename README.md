@@ -28,6 +28,7 @@ Link to frontend repo: https://github.com/flyoungiv/tomato
 - add links/metadata section
 - set up CI/CD
 - scatter plot of total medals per country across all years
+- country flag emojis (need alpha 2 country code)
 
 ## Data Sources
 https://data.worldbank.org/indicator/SP.POP.TOTL

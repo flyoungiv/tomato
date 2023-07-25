@@ -60,4 +60,4 @@ def update_item(item_id: int, item: Item):
     return {"item_name": item.name, "item_id": item_id}
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host='0.0.0.0', port=os.environ['$PORT'], log_level="info")
+    uvicorn.run("main:app", host='0.0.0.0', port=os.environ['PORT'], log_level="info")

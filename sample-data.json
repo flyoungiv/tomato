@@ -1,0 +1,505 @@
+// 20230725104605
+// http://127.0.0.1:8000/countries
+
+[
+  {
+    "country": "Algeria",
+    "country_code": "DZA",
+    "medals": 248
+  },
+  {
+    "country": "Argentina",
+    "country_code": "ARG",
+    "medals": 4278
+  },
+  {
+    "country": "Armenia",
+    "country_code": "ARM",
+    "medals": 310
+  },
+  {
+    "country": "Australia",
+    "country_code": "AUS",
+    "medals": 20274
+  },
+  {
+    "country": "Austria",
+    "country_code": "AUT",
+    "medals": 2232
+  },
+  {
+    "country": "Azerbaijan",
+    "country_code": "AZE",
+    "medals": 620
+  },
+  {
+    "country": "Bahamas, The",
+    "country_code": "BHS",
+    "medals": 868
+  },
+  {
+    "country": "Belarus",
+    "country_code": "BLR",
+    "medals": 1984
+  },
+  {
+    "country": "Belgium",
+    "country_code": "BEL",
+    "medals": 1116
+  },
+  {
+    "country": "Botswana",
+    "country_code": "BWA",
+    "medals": 62
+  },
+  {
+    "country": "Brazil",
+    "country_code": "BRA",
+    "medals": 9982
+  },
+  {
+    "country": "Bulgaria",
+    "country_code": "BGR",
+    "medals": 4216
+  },
+  {
+    "country": "Cameroon",
+    "country_code": "CMR",
+    "medals": 496
+  },
+  {
+    "country": "Canada",
+    "country_code": "CAN",
+    "medals": 15810
+  },
+  {
+    "country": "Chile",
+    "country_code": "CHL",
+    "medals": 248
+  },
+  {
+    "country": "China",
+    "country_code": "CHN",
+    "medals": 7564
+  },
+  {
+    "country": "Colombia",
+    "country_code": "COL",
+    "medals": 434
+  },
+  {
+    "country": "Croatia",
+    "country_code": "HRV",
+    "medals": 1922
+  },
+  {
+    "country": "Cuba",
+    "country_code": "CUB",
+    "medals": 6634
+  },
+  {
+    "country": "Czechia",
+    "country_code": "CZE",
+    "medals": 1116
+  },
+  {
+    "country": "Denmark",
+    "country_code": "DNK",
+    "medals": 3534
+  },
+  {
+    "country": "Dominican Republic",
+    "country_code": "DOM",
+    "medals": 62
+  },
+  {
+    "country": "Egypt, Arab Rep.",
+    "country_code": "EGY",
+    "medals": 186
+  },
+  {
+    "country": "Estonia",
+    "country_code": "EST",
+    "medals": 186
+  },
+  {
+    "country": "Ethiopia",
+    "country_code": "ETH",
+    "medals": 1550
+  },
+  {
+    "country": "Fiji",
+    "country_code": "FJI",
+    "medals": 124
+  },
+  {
+    "country": "Finland",
+    "country_code": "FIN",
+    "medals": 1240
+  },
+  {
+    "country": "France",
+    "country_code": "FRA",
+    "medals": 17360
+  },
+  {
+    "country": "Georgia",
+    "country_code": "GEO",
+    "medals": 310
+  },
+  {
+    "country": "Germany",
+    "country_code": "DEU",
+    "medals": 18414
+  },
+  {
+    "country": "Ghana",
+    "country_code": "GHA",
+    "medals": 682
+  },
+  {
+    "country": "Greece",
+    "country_code": "GRC",
+    "medals": 930
+  },
+  {
+    "country": "Guatemala",
+    "country_code": "GTM",
+    "medals": 62
+  },
+  {
+    "country": "Guyana",
+    "country_code": "GUY",
+    "medals": 62
+  },
+  {
+    "country": "Hungary",
+    "country_code": "HUN",
+    "medals": 10478
+  },
+  {
+    "country": "Iceland",
+    "country_code": "ISL",
+    "medals": 124
+  },
+  {
+    "country": "India",
+    "country_code": "IND",
+    "medals": 682
+  },
+  {
+    "country": "Indonesia",
+    "country_code": "IDN",
+    "medals": 310
+  },
+  {
+    "country": "Iran, Islamic Rep.",
+    "country_code": "IRN",
+    "medals": 496
+  },
+  {
+    "country": "Iraq",
+    "country_code": "IRQ",
+    "medals": 62
+  },
+  {
+    "country": "Ireland",
+    "country_code": "IRL",
+    "medals": 310
+  },
+  {
+    "country": "Israel",
+    "country_code": "ISR",
+    "medals": 62
+  },
+  {
+    "country": "Italy",
+    "country_code": "ITA",
+    "medals": 23994
+  },
+  {
+    "country": "Jamaica",
+    "country_code": "JAM",
+    "medals": 2852
+  },
+  {
+    "country": "Japan",
+    "country_code": "JPN",
+    "medals": 3100
+  },
+  {
+    "country": "Jordan",
+    "country_code": "JOR",
+    "medals": 62
+  },
+  {
+    "country": "Kazakhstan",
+    "country_code": "KAZ",
+    "medals": 682
+  },
+  {
+    "country": "Kenya",
+    "country_code": "KEN",
+    "medals": 1116
+  },
+  {
+    "country": "Korea, Rep.",
+    "country_code": "KOR",
+    "medals": 3286
+  },
+  {
+    "country": "Kuwait",
+    "country_code": "KWT",
+    "medals": 124
+  },
+  {
+    "country": "Kyrgyz Republic",
+    "country_code": "KGZ",
+    "medals": 62
+  },
+  {
+    "country": "Latvia",
+    "country_code": "LVA",
+    "medals": 248
+  },
+  {
+    "country": "Lithuania",
+    "country_code": "LTU",
+    "medals": 744
+  },
+  {
+    "country": "Malaysia",
+    "country_code": "MYS",
+    "medals": 248
+  },
+  {
+    "country": "Mexico",
+    "country_code": "MEX",
+    "medals": 1364
+  },
+  {
+    "country": "Moldova",
+    "country_code": "MDA",
+    "medals": 62
+  },
+  {
+    "country": "Mongolia",
+    "country_code": "MNG",
+    "medals": 496
+  },
+  {
+    "country": "Montenegro",
+    "country_code": "MNE",
+    "medals": 248
+  },
+  {
+    "country": "Morocco",
+    "country_code": "MAR",
+    "medals": 992
+  },
+  {
+    "country": "Netherlands",
+    "country_code": "NLD",
+    "medals": 10912
+  },
+  {
+    "country": "New Zealand",
+    "country_code": "NZL",
+    "medals": 4402
+  },
+  {
+    "country": "Niger",
+    "country_code": "NER",
+    "medals": 124
+  },
+  {
+    "country": "Nigeria",
+    "country_code": "NGA",
+    "medals": 2356
+  },
+  {
+    "country": "Norway",
+    "country_code": "NOR",
+    "medals": 9238
+  },
+  {
+    "country": "Pakistan",
+    "country_code": "PAK",
+    "medals": 2542
+  },
+  {
+    "country": "Paraguay",
+    "country_code": "PRY",
+    "medals": 682
+  },
+  {
+    "country": "Peru",
+    "country_code": "PER",
+    "medals": 248
+  },
+  {
+    "country": "Philippines",
+    "country_code": "PHL",
+    "medals": 62
+  },
+  {
+    "country": "Poland",
+    "country_code": "POL",
+    "medals": 4650
+  },
+  {
+    "country": "Portugal",
+    "country_code": "PRT",
+    "medals": 248
+  },
+  {
+    "country": "Puerto Rico",
+    "country_code": "PRI",
+    "medals": 186
+  },
+  {
+    "country": "Qatar",
+    "country_code": "QAT",
+    "medals": 186
+  },
+  {
+    "country": "Romania",
+    "country_code": "ROU",
+    "medals": 11904
+  },
+  {
+    "country": "Russian Federation",
+    "country_code": "RUS",
+    "medals": 13888
+  },
+  {
+    "country": "Saudi Arabia",
+    "country_code": "SAU",
+    "medals": 310
+  },
+  {
+    "country": "Senegal",
+    "country_code": "SEN",
+    "medals": 62
+  },
+  {
+    "country": "Serbia",
+    "country_code": "SRB",
+    "medals": 1240
+  },
+  {
+    "country": "Singapore",
+    "country_code": "SGP",
+    "medals": 186
+  },
+  {
+    "country": "Slovak Republic",
+    "country_code": "SVK",
+    "medals": 186
+  },
+  {
+    "country": "Slovenia",
+    "country_code": "SVN",
+    "medals": 682
+  },
+  {
+    "country": "South Africa",
+    "country_code": "ZAF",
+    "medals": 682
+  },
+  {
+    "country": "Spain",
+    "country_code": "ESP",
+    "medals": 10230
+  },
+  {
+    "country": "Sweden",
+    "country_code": "SWE",
+    "medals": 8556
+  },
+  {
+    "country": "Switzerland",
+    "country_code": "CHE",
+    "medals": 5270
+  },
+  {
+    "country": "Syrian Arab Republic",
+    "country_code": "SYR",
+    "medals": 124
+  },
+  {
+    "country": "Tajikistan",
+    "country_code": "TJK",
+    "medals": 186
+  },
+  {
+    "country": "Tanzania",
+    "country_code": "TZA",
+    "medals": 62
+  },
+  {
+    "country": "Thailand",
+    "country_code": "THA",
+    "medals": 248
+  },
+  {
+    "country": "Togo",
+    "country_code": "TGO",
+    "medals": 62
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "country_code": "TTO",
+    "medals": 930
+  },
+  {
+    "country": "Tunisia",
+    "country_code": "TUN",
+    "medals": 124
+  },
+  {
+    "country": "Turkiye",
+    "country_code": "TUR",
+    "medals": 1736
+  },
+  {
+    "country": "Uganda",
+    "country_code": "UGA",
+    "medals": 62
+  },
+  {
+    "country": "Ukraine",
+    "country_code": "UKR",
+    "medals": 2356
+  },
+  {
+    "country": "United Arab Emirates",
+    "country_code": "ARE",
+    "medals": 62
+  },
+  {
+    "country": "United Kingdom",
+    "country_code": "GBR",
+    "medals": 15810
+  },
+  {
+    "country": "United States",
+    "country_code": "USA",
+    "medals": 62434
+  },
+  {
+    "country": "Uzbekistan",
+    "country_code": "UZB",
+    "medals": 434
+  },
+  {
+    "country": "Venezuela, RB",
+    "country_code": "VEN",
+    "medals": 310
+  },
+  {
+    "country": "Zimbabwe",
+    "country_code": "ZWE",
+    "medals": 744
+  }
+]

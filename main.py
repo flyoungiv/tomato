@@ -49,7 +49,7 @@ def read_root():
 
 
 @app.get("/countries")
-def read_item() -> list[OlympicCountry]:
+def get_countries_list() -> list[OlympicCountry]:
     conn = psycopg2.connect(database="postgres", user=DB_USER,
                             password=DB_PASSWORD, host=DB_HOST, port="5432")
     cur = conn.cursor()
@@ -91,9 +91,9 @@ def read_item() -> list[OlympicCountry]:
     return countries
 
 # use to get more in-depth detail on country
-@app.put("/items/{item_id}")
-def update_item(item_id: int, item: Item):
-    return {"item_name": item.name, "item_id": item_id}
+@app.get("/countries/{country_code}/detail")
+def get_olympic_country_detail(country_code: int):
+    return {"item_name": item.name, "country_code": country_code}
 
 
 if __name__ == "__main__":

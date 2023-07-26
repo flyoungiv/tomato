@@ -22,6 +22,8 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "http://localhost:8080",
+    "https://tomato-frontend-react.vercel.app",
+    "https://tomato-frontend-angular.vercel.app"
 ]
 
 app.add_middleware(
@@ -48,51 +50,6 @@ class OlympicCountry(BaseModel):
 @app.get("/")
 def read_root():
     return {"Congratulations": "You found the backend"}
-
-
-@app.get("/countries")
-def get_countries_list() -> list[OlympicCountry]:
-
-  def connect_unix_socket() -> sqlalchemy.engine.base.Engine:
-      """Initializes a Unix socket connection pool for a Cloud SQL instance of MySQL."""
-      # Note: Saving credentials in environment variables is convenient, but not
-      # secure - consider a more secure solution such as
-      # Cloud Secret Manager (https://cloud.google.com/secret-manager) to help
-      # keep secrets safe.
-      db_user = DB_USER # os.environ["DB_USER"]  # e.g. 'my-database-user'
-      db_pass = DB_PASSWORD # os.environ["DB_PASS"]  # e.g. 'my-database-password'
-      db_name = 'postgres' # os.environ["DB_NAME"]  # e.g. 'my-database'
-      unix_socket_path = 'symmetric-fold-393422:us-central1:tomato' #os.environ[
-      "symmetric-fold-393422:us-central1:tomato"
-      # ]  # e.g. '/cloudsql/project:region:instance'
-
-      pool = sqlalchemy.create_engine(
-          # Equivalent URL:
-          # mysql+pymysql://<db_user>:<db_pass>@/<db_name>?unix_socket=<socket_path>/<cloud_sql_instance_name>
-          sqlalchemy.engine.url.URL.create(
-              # drivername="mysql+pymysql",
-              drivername="postgresql+psycopg2",
-              username=db_user,
-              password=db_pass,
-              database=db_name,
-              query={"unix_socket": unix_socket_path},
-          ),
-          # ...
-      )
-      return pool
-
-  engine = connect_unix_socket()
-
-  with engine.connect() as conn:
-      result = conn.execute(text("select 'hello world'"))
-      print(result.all())
-
-  return [{ "country:" "Algeria" }]
-
-# use to get more in-depth detail on country
-@app.get("/countries/{country_code}/detail")
-def get_olympic_country_detail(country_code: int):
-    return {"item_name": item.name, "country_code": country_code}
 
 @app.get("/sqlalchemy")
 def connect_with_sql_alchemy() -> list[OlympicCountry]:
@@ -183,6 +140,11 @@ def connect_with_sql_alchemy() -> list[OlympicCountry]:
         countries.append(country)
 
     return countries
+
+# use to get more in-depth detail on country
+@app.get("/countries/{country_code}/detail")
+def get_olympic_country_detail(country_code: int):
+    return {"item_name": item.name, "country_code": country_code}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host='0.0.0.0',

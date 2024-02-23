@@ -1,5 +1,6 @@
 # Tomato [Backend] 🍅
 =======
+This code creates a simple FastAPI Python server and provides a few basic endpoints.
 Link to frontend repo: https://github.com/flyoungiv/tomato
 
 ## To-Do
